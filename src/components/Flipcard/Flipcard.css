@@ -1,0 +1,222 @@
+.flipcard {
+  perspective: 1000px;
+}
+
+.front img {
+  width: inherit;
+  height: inherit;
+}
+
+.front {
+  cursor: pointer;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+  position: absolute;
+  height: inherit;
+  background-color: grey;
+  color: black;
+}
+
+.single-card {
+  text-align: center;
+  transition: all 1.5s;
+  transform-style: preserve-3d;
+}
+
+.flipcard:hover .single-card {
+  transform: rotateY(180deg);
+}
+
+@media (min-width: 1200px) {
+  .flipcard,
+  .single-card {
+    width: 380px;
+    height: 420px;
+    position: relative;
+  }
+  .content {
+    padding: 7px 10px;
+  }
+
+  .content h2 {
+    font-size: 23px;
+  }
+
+  .content h4 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .content a {
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+  }
+  .front,
+  .back {
+    width: 380px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .flipcard {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .flipcard,
+  .single-card {
+    width: 300px;
+    height: 270px;
+    position: relative;
+  }
+  .content {
+    padding: 7px;
+  }
+
+  .content h2 {
+    font-size: 21px;
+  }
+
+  .content h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .content a {
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+  }
+  .front,
+  .back {
+    width: 300px;
+    height: 270px;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .flipcard {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .flipcard,
+  .single-card {
+    width: 350px;
+    height: 270px;
+    position: relative;
+  }
+  .content {
+    padding: 7px 10px;
+  }
+
+  .content h2 {
+    font-size: 21px;
+  }
+
+  .content h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .content a {
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+  }
+  .front,
+  .back {
+    width: 350px;
+    height: 270px;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .flipcard {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .flipcard,
+  .single-card {
+    width: 380px;
+    height: 290px;
+    position: relative;
+  }
+  .content {
+    padding: 7px 10px;
+  }
+
+  .content h2 {
+    font-size: 21px;
+  }
+
+  .content h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .content a {
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+  }
+  .front,
+  .back {
+    width: 380px;
+    height: 290px;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .flipcard {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .flipcard,
+  .single-card {
+    width: 350px;
+    height: 270px;
+    position: relative;
+  }
+  .content {
+    padding: 7px 10px;
+  }
+
+  .content h2 {
+    font-size: 21px;
+  }
+
+  .content h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .content a {
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+  }
+  .front,
+  .back {
+    width: 350px;
+    height: 270px;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .flipcard {
+    margin-left: 15px;
+  }
+}

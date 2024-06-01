@@ -1,0 +1,90 @@
+.navbar {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.nav-li {
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+  mix-blend-mode: overlay;
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    width: 50px;
+    padding-top: 15%;
+  }
+  .icon {
+    font-size: 24px;
+  }
+  .navbar ul {
+    gap: 45px;
+    right: 30%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar {
+    width: 40px;
+    padding-top: 20%;
+  }
+  .icon {
+    font-size: 22px;
+  }
+  .navbar ul {
+    gap: 45px;
+    right: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar {
+    width: 40px;
+    padding-top: 20%;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .navbar ul {
+    gap: 45px;
+    right: 30%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .navbar {
+    width: 30px;
+    padding-top: 25%;
+  }
+  .icon {
+    font-size: 18px;
+  }
+  .navbar ul {
+    gap: 45px;
+    right: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 30px;
+    padding-top: 45%;
+  }
+  .icon {
+    font-size: 16px;
+  }
+  .navbar ul {
+    gap: 35px;
+    right: 30%;
+  }
+}

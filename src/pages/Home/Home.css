@@ -1,0 +1,103 @@
+.home {
+  max-width: 100vw;
+  position: relative;
+  height: 100vh;
+  z-index: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-name {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 3s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: both;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-name {
+    font-size: 95px;
+    margin-bottom: 0;
+  }
+
+  .home-text {
+    font-size: 38px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .home-name {
+    margin-left: 50px;
+    font-size: 75px;
+  }
+
+  .home-text {
+    margin-left: 50px;
+
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .home-name {
+    margin-left: 50px;
+    font-size: 60px;
+  }
+
+  .home-text {
+    margin-left: 50px;
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .home-name {
+    margin-left: 30px;
+    font-size: 40px;
+  }
+
+  .home-text {
+    margin-left: 30px;
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 400px) {
+  .home-name {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+
+  .home-text {
+    margin-left: 20px;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 250px) {
+  .home-name {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .home-text {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+}
